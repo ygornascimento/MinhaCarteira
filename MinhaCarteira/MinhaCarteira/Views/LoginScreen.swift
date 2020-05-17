@@ -11,7 +11,7 @@ import UIKit
 class LoginView: UIView {
     private let loginLabel: UILabel = {
         let label = UILabel()
-        label.text = "Faça seu login automático já com sua conta Apple."
+        label.text = "Faça seu login automático já com sua conta Apple"
         return label
     }()
 
@@ -27,7 +27,6 @@ class LoginView: UIView {
 
     private func setupLoginView() {
         addSubview(loginLabel)
-        loginLabel.translatesAutoresizingMaskIntoConstraints = false
 
         NSLayoutConstraint.activate([
             loginLabel.centerYAnchor.constraint(equalTo: centerYAnchor),
