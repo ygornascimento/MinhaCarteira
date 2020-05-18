@@ -34,8 +34,6 @@ final class SignInViewController: UIViewController, SignInDisplayLogic {
         presenter.viewController = viewController
         router.viewController = viewController
         router.dataStore = interactor
-
-
     }
 
     // MARK: Routing
@@ -55,13 +53,9 @@ final class SignInViewController: UIViewController, SignInDisplayLogic {
         super.viewDidLoad()
         doSomething()
         setupView()
-
-
     }
 
     // MARK: Do something
-
-    //@IBOutlet weak var nameTextField: UITextField!
 
     func doSomething() {
         let request = SignIn.Something.Request()

@@ -89,6 +89,7 @@
 		F44301612471B81E00DC8195 /* LoginScene */ = {
 			isa = PBXGroup;
 			children = (
+				F44301702471BEAB00DC8195 /* LoginView.swift */,
 				F44301622471B89900DC8195 /* SignInPresenter.swift */,
 				F44301632471B89900DC8195 /* SignInWorker.swift */,
 				F44301642471B89900DC8195 /* SignInRouter.swift */,
@@ -97,14 +98,6 @@
 				F44301672471B89900DC8195 /* SignInInteractor.swift */,
 			);
 			path = LoginScene;
-			sourceTree = "<group>";
-		};
-		F443016E2471BB1900DC8195 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				F44301702471BEAB00DC8195 /* LoginView.swift */,
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		F443016F2471BB3200DC8195 /* SupportFiles */ = {
@@ -143,7 +136,6 @@
 		F4D6E0B024671C5B003B7F16 /* MinhaCarteira */ = {
 			isa = PBXGroup;
 			children = (
-				F443016E2471BB1900DC8195 /* Views */,
 				F44301612471B81E00DC8195 /* LoginScene */,
 			);
 			path = MinhaCarteira;
