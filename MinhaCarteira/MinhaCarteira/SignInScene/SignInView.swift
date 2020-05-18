@@ -1,5 +1,5 @@
 //
-//  LoginScreen.swift
+//  SignInView.swift
 //  MinhaCarteira
 //
 //  Created by Ygor Nascimento on 17/05/20.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LoginView: UIView {
+class SignInView: UIView {
     private let loginLabel: UILabel = {
         let label = UILabel()
         label.text = "Faça seu login automático já com sua conta Apple."

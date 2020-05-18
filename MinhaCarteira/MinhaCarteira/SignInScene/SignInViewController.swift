@@ -17,7 +17,7 @@ protocol SignInDisplayLogic: class {
 }
 
 final class SignInViewController: UIViewController, SignInDisplayLogic {
-    let loginView = LoginView()
+    let loginView = SignInView()
     var interactor: SignInBusinessLogic?
     var router: (NSObjectProtocol & SignInRoutingLogic & SignInDataPassing)?
 

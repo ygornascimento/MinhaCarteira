@@ -13,7 +13,7 @@
 		F443016B2471B89900DC8195 /* SignInModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44301652471B89900DC8195 /* SignInModels.swift */; };
 		F443016C2471B89900DC8195 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44301662471B89900DC8195 /* SignInViewController.swift */; };
 		F443016D2471B89900DC8195 /* SignInInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44301672471B89900DC8195 /* SignInInteractor.swift */; };
-		F44301712471BEAB00DC8195 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44301702471BEAB00DC8195 /* LoginView.swift */; };
+		F44301712471BEAB00DC8195 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44301702471BEAB00DC8195 /* SignInView.swift */; };
 		F4D6E0B224671C5B003B7F16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D6E0B124671C5B003B7F16 /* AppDelegate.swift */; };
 		F4D6E0B424671C5B003B7F16 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D6E0B324671C5B003B7F16 /* SceneDelegate.swift */; };
 		F4D6E0BB24671C5B003B7F16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4D6E0BA24671C5B003B7F16 /* Assets.xcassets */; };
@@ -46,7 +46,7 @@
 		F44301652471B89900DC8195 /* SignInModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInModels.swift; sourceTree = "<group>"; };
 		F44301662471B89900DC8195 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		F44301672471B89900DC8195 /* SignInInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInInteractor.swift; sourceTree = "<group>"; };
-		F44301702471BEAB00DC8195 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		F44301702471BEAB00DC8195 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		F4D6E0AE24671C5B003B7F16 /* MinhaCarteira.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MinhaCarteira.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4D6E0B124671C5B003B7F16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4D6E0B324671C5B003B7F16 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -86,10 +86,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F44301612471B81E00DC8195 /* LoginScene */ = {
+		F44301612471B81E00DC8195 /* SignInScene */ = {
 			isa = PBXGroup;
 			children = (
-				F44301702471BEAB00DC8195 /* LoginView.swift */,
+				F44301702471BEAB00DC8195 /* SignInView.swift */,
 				F44301622471B89900DC8195 /* SignInPresenter.swift */,
 				F44301632471B89900DC8195 /* SignInWorker.swift */,
 				F44301642471B89900DC8195 /* SignInRouter.swift */,
@@ -97,7 +97,7 @@
 				F44301662471B89900DC8195 /* SignInViewController.swift */,
 				F44301672471B89900DC8195 /* SignInInteractor.swift */,
 			);
-			path = LoginScene;
+			path = SignInScene;
 			sourceTree = "<group>";
 		};
 		F443016F2471BB3200DC8195 /* SupportFiles */ = {
@@ -136,7 +136,7 @@
 		F4D6E0B024671C5B003B7F16 /* MinhaCarteira */ = {
 			isa = PBXGroup;
 			children = (
-				F44301612471B81E00DC8195 /* LoginScene */,
+				F44301612471B81E00DC8195 /* SignInScene */,
 			);
 			path = MinhaCarteira;
 			sourceTree = "<group>";
@@ -291,7 +291,7 @@
 			files = (
 				F443016B2471B89900DC8195 /* SignInModels.swift in Sources */,
 				F443016A2471B89900DC8195 /* SignInRouter.swift in Sources */,
-				F44301712471BEAB00DC8195 /* LoginView.swift in Sources */,
+				F44301712471BEAB00DC8195 /* SignInView.swift in Sources */,
 				F44301692471B89900DC8195 /* SignInWorker.swift in Sources */,
 				F44301682471B89900DC8195 /* SignInPresenter.swift in Sources */,
 				F443016C2471B89900DC8195 /* SignInViewController.swift in Sources */,
