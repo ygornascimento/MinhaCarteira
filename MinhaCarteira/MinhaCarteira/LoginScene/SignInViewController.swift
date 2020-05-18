@@ -21,18 +21,6 @@ final class SignInViewController: UIViewController, SignInDisplayLogic {
     var interactor: SignInBusinessLogic?
     var router: (NSObjectProtocol & SignInRoutingLogic & SignInDataPassing)?
 
-    // MARK: Object lifecycle
-
-    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
-        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-        setup()
-    }
-
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        setup()
-    }
-
     // MARK: Setup
 
     private func setup() {
