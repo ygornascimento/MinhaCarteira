@@ -17,7 +17,7 @@ protocol SignInDisplayLogic: class {
 }
 
 final class SignInViewController: UIViewController, SignInDisplayLogic {
-    let loginView = SignInView()
+    let signInView = SignInView()
     var interactor: SignInBusinessLogic?
     var router: (NSObjectProtocol & SignInRoutingLogic & SignInDataPassing)?
 
@@ -64,15 +64,15 @@ final class SignInViewController: UIViewController, SignInDisplayLogic {
 
     private func setupView() {
         view.backgroundColor = .white
-        view.addSubview(loginView)
-        loginView.translatesAutoresizingMaskIntoConstraints = true
+        view.addSubview(signInView)
+        signInView.translatesAutoresizingMaskIntoConstraints = false
 
         NSLayoutConstraint.activate([
-            loginView.topAnchor.constraint(equalTo: view.topAnchor, constant: 30),
-            loginView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
-            loginView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16)
+            signInView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            signInView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
+            signInView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
+            signInView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
         ])
-
     }
 
     func displaySomething(viewModel: SignIn.Something.ViewModel) {
