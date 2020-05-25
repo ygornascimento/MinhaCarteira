@@ -14,6 +14,9 @@
 		F443016C2471B89900DC8195 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44301662471B89900DC8195 /* SignInViewController.swift */; };
 		F443016D2471B89900DC8195 /* SignInInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44301672471B89900DC8195 /* SignInInteractor.swift */; };
 		F44301712471BEAB00DC8195 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44301702471BEAB00DC8195 /* SignInView.swift */; };
+		F4482FF9247C134100B7A7B4 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4482FF8247C134100B7A7B4 /* HomeView.swift */; };
+		F4482FFB247C5AB900B7A7B4 /* HomeViewUserWelcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4482FFA247C5AB900B7A7B4 /* HomeViewUserWelcome.swift */; };
+		F4482FFD247C690A00B7A7B4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F4482FFC247C690A00B7A7B4 /* Localizable.strings */; };
 		F4D6E0B224671C5B003B7F16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D6E0B124671C5B003B7F16 /* AppDelegate.swift */; };
 		F4D6E0B424671C5B003B7F16 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D6E0B324671C5B003B7F16 /* SceneDelegate.swift */; };
 		F4D6E0BB24671C5B003B7F16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4D6E0BA24671C5B003B7F16 /* Assets.xcassets */; };
@@ -47,6 +50,9 @@
 		F44301662471B89900DC8195 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		F44301672471B89900DC8195 /* SignInInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInInteractor.swift; sourceTree = "<group>"; };
 		F44301702471BEAB00DC8195 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		F4482FF8247C134100B7A7B4 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		F4482FFA247C5AB900B7A7B4 /* HomeViewUserWelcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewUserWelcome.swift; sourceTree = "<group>"; };
+		F4482FFC247C690A00B7A7B4 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		F4D6E0AE24671C5B003B7F16 /* MinhaCarteira.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MinhaCarteira.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4D6E0B124671C5B003B7F16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4D6E0B324671C5B003B7F16 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -108,8 +114,18 @@
 				F4D6E0BA24671C5B003B7F16 /* Assets.xcassets */,
 				F4D6E0BC24671C5B003B7F16 /* LaunchScreen.storyboard */,
 				F4D6E0BF24671C5B003B7F16 /* Info.plist */,
+				F4482FFC247C690A00B7A7B4 /* Localizable.strings */,
 			);
 			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		F4482FF7247C132300B7A7B4 /* HomeScene */ = {
+			isa = PBXGroup;
+			children = (
+				F4482FF8247C134100B7A7B4 /* HomeView.swift */,
+				F4482FFA247C5AB900B7A7B4 /* HomeViewUserWelcome.swift */,
+			);
+			path = HomeScene;
 			sourceTree = "<group>";
 		};
 		F4D6E0A524671C5B003B7F16 = {
@@ -136,6 +152,7 @@
 		F4D6E0B024671C5B003B7F16 /* MinhaCarteira */ = {
 			isa = PBXGroup;
 			children = (
+				F4482FF7247C132300B7A7B4 /* HomeScene */,
 				F44301612471B81E00DC8195 /* SignInScene */,
 			);
 			path = MinhaCarteira;
@@ -264,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4D6E0BE24671C5B003B7F16 /* LaunchScreen.storyboard in Resources */,
+				F4482FFD247C690A00B7A7B4 /* Localizable.strings in Resources */,
 				F4D6E0BB24671C5B003B7F16 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,9 +310,11 @@
 				F443016B2471B89900DC8195 /* SignInModels.swift in Sources */,
 				F443016A2471B89900DC8195 /* SignInRouter.swift in Sources */,
 				F44301712471BEAB00DC8195 /* SignInView.swift in Sources */,
+				F4482FF9247C134100B7A7B4 /* HomeView.swift in Sources */,
 				F44301692471B89900DC8195 /* SignInWorker.swift in Sources */,
 				F44301682471B89900DC8195 /* SignInPresenter.swift in Sources */,
 				F443016C2471B89900DC8195 /* SignInViewController.swift in Sources */,
+				F4482FFB247C5AB900B7A7B4 /* HomeViewUserWelcome.swift in Sources */,
 				F4D6E0B224671C5B003B7F16 /* AppDelegate.swift in Sources */,
 				F4D6E0B424671C5B003B7F16 /* SceneDelegate.swift in Sources */,
 				F443016D2471B89900DC8195 /* SignInInteractor.swift in Sources */,
