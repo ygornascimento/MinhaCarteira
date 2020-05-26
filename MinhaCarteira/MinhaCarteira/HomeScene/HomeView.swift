@@ -15,7 +15,7 @@ class HomeView: UIView {
     private let userBalanceTitleLabel: UILabel = {
         let label = UILabel()
         label.text = "Meu Saldo:"
-        label.font = UIFont.systemFont(ofSize: 14.0)
+        label.font = UIFont.systemFont(ofSize: 16)
         label.numberOfLines = 0
         return label
     }()
@@ -23,14 +23,14 @@ class HomeView: UIView {
     private let userBalanceValueLabel: UILabel = {
         let label = UILabel()
         label.text = "R$ 1000,00"
-        label.font = UIFont.systemFont(ofSize: 14.0)
+        label.font = UIFont.systemFont(ofSize: 16)
         return label
     }()
 
     private let userExpensesTitleLabel: UILabel = {
         let label = UILabel()
         label.text = "Gastos de Hoje:"
-        label.font = UIFont.systemFont(ofSize: 14.0)
+        label.font = UIFont.systemFont(ofSize: 16)
         label.textAlignment = .right
         return label
     }()
@@ -38,7 +38,7 @@ class HomeView: UIView {
     private let userExpensesValueLabel: UILabel = {
         let label = UILabel()
         label.text = "R$ 360,00"
-        label.font = UIFont.systemFont(ofSize: 14.0)
+        label.font = UIFont.systemFont(ofSize: 16)
         label.textAlignment = .right
         return label
     }()
@@ -65,8 +65,24 @@ class HomeView: UIView {
         let button = UIButton()
         button.setTitle("Ocultar Valores", for: .normal)
         button.setTitleColor(.black, for: .normal)
-        button.titleLabel?.font = UIFont.systemFont(ofSize: 14.0)
+        button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 14)
         return button
+    }()
+
+    private let financeReportButton: UIButton = {
+        let button = UIButton()
+        button.setTitle("Ver Relatório de Financeiro", for: .normal)
+        button.setTitleColor(.black, for: .normal)
+        button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 14)
+        return button
+    }()
+
+    private let lastExpensesTitleLabel: UILabel = {
+        let label = UILabel()
+        label.text = "Últimas Movimentações"
+        label.font = UIFont.systemFont(ofSize: 18)
+        label.textAlignment = .right
+        return label
     }()
 
     override init(frame: CGRect) {
@@ -83,6 +99,8 @@ class HomeView: UIView {
         addSubview(balanceStackView)
         addSubview(expenseStackView)
         addSubview(hideBalanceButton)
+        addSubview(financeReportButton)
+        addSubview(lastExpensesTitleLabel)
 
         balanceStackView.translatesAutoresizingMaskIntoConstraints = false
         expenseStackView.translatesAutoresizingMaskIntoConstraints = false
@@ -93,8 +111,9 @@ class HomeView: UIView {
         userExpensesValueLabel.translatesAutoresizingMaskIntoConstraints = false
 
         hideBalanceButton.translatesAutoresizingMaskIntoConstraints = false
+        financeReportButton.translatesAutoresizingMaskIntoConstraints = false
 
-        //let topSpacing = UIScreen.main.bounds.height * 0.150
+        lastExpensesTitleLabel.translatesAutoresizingMaskIntoConstraints = false
 
         NSLayoutConstraint.activate([
             balanceStackView.topAnchor.constraint(equalTo: topAnchor, constant: 10),
@@ -104,7 +123,13 @@ class HomeView: UIView {
             expenseStackView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20),
 
             hideBalanceButton.topAnchor.constraint(equalTo: expenseStackView.bottomAnchor, constant: 10),
-            hideBalanceButton.centerXAnchor.constraint(equalTo: centerXAnchor)
+            hideBalanceButton.centerXAnchor.constraint(equalTo: centerXAnchor),
+
+            financeReportButton.topAnchor.constraint(equalTo: hideBalanceButton.bottomAnchor, constant: 20),
+            financeReportButton.centerXAnchor.constraint(equalTo: centerXAnchor),
+
+            lastExpensesTitleLabel.topAnchor.constraint(equalTo: financeReportButton.bottomAnchor, constant: 26),
+            lastExpensesTitleLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20)
 
         ])
     }

@@ -17,6 +17,14 @@
 		F4482FF9247C134100B7A7B4 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4482FF8247C134100B7A7B4 /* HomeView.swift */; };
 		F4482FFB247C5AB900B7A7B4 /* HomeViewUserWelcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4482FFA247C5AB900B7A7B4 /* HomeViewUserWelcome.swift */; };
 		F4482FFD247C690A00B7A7B4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F4482FFC247C690A00B7A7B4 /* Localizable.strings */; };
+		F4483004247D0C9800B7A7B4 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4482FFE247D0C9800B7A7B4 /* HomePresenter.swift */; };
+		F4483005247D0C9800B7A7B4 /* HomeWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4482FFF247D0C9800B7A7B4 /* HomeWorker.swift */; };
+		F4483006247D0C9800B7A7B4 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4483000247D0C9800B7A7B4 /* HomeRouter.swift */; };
+		F4483007247D0C9800B7A7B4 /* HomeModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4483001247D0C9800B7A7B4 /* HomeModels.swift */; };
+		F4483008247D0C9800B7A7B4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4483002247D0C9800B7A7B4 /* HomeViewController.swift */; };
+		F4483009247D0C9800B7A7B4 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4483003247D0C9800B7A7B4 /* HomeInteractor.swift */; };
+		F448300B247D12B900B7A7B4 /* HomeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F448300A247D12B900B7A7B4 /* HomeViewCell.swift */; };
+		F448300D247D152300B7A7B4 /* HomeViewContainerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F448300C247D152300B7A7B4 /* HomeViewContainerCell.swift */; };
 		F4D6E0B224671C5B003B7F16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D6E0B124671C5B003B7F16 /* AppDelegate.swift */; };
 		F4D6E0B424671C5B003B7F16 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D6E0B324671C5B003B7F16 /* SceneDelegate.swift */; };
 		F4D6E0BB24671C5B003B7F16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4D6E0BA24671C5B003B7F16 /* Assets.xcassets */; };
@@ -53,6 +61,14 @@
 		F4482FF8247C134100B7A7B4 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		F4482FFA247C5AB900B7A7B4 /* HomeViewUserWelcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewUserWelcome.swift; sourceTree = "<group>"; };
 		F4482FFC247C690A00B7A7B4 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		F4482FFE247D0C9800B7A7B4 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		F4482FFF247D0C9800B7A7B4 /* HomeWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWorker.swift; sourceTree = "<group>"; };
+		F4483000247D0C9800B7A7B4 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		F4483001247D0C9800B7A7B4 /* HomeModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModels.swift; sourceTree = "<group>"; };
+		F4483002247D0C9800B7A7B4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F4483003247D0C9800B7A7B4 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		F448300A247D12B900B7A7B4 /* HomeViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewCell.swift; sourceTree = "<group>"; };
+		F448300C247D152300B7A7B4 /* HomeViewContainerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewContainerCell.swift; sourceTree = "<group>"; };
 		F4D6E0AE24671C5B003B7F16 /* MinhaCarteira.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MinhaCarteira.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4D6E0B124671C5B003B7F16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4D6E0B324671C5B003B7F16 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -124,6 +140,14 @@
 			children = (
 				F4482FF8247C134100B7A7B4 /* HomeView.swift */,
 				F4482FFA247C5AB900B7A7B4 /* HomeViewUserWelcome.swift */,
+				F4482FFE247D0C9800B7A7B4 /* HomePresenter.swift */,
+				F4482FFF247D0C9800B7A7B4 /* HomeWorker.swift */,
+				F4483000247D0C9800B7A7B4 /* HomeRouter.swift */,
+				F4483001247D0C9800B7A7B4 /* HomeModels.swift */,
+				F4483002247D0C9800B7A7B4 /* HomeViewController.swift */,
+				F4483003247D0C9800B7A7B4 /* HomeInteractor.swift */,
+				F448300A247D12B900B7A7B4 /* HomeViewCell.swift */,
+				F448300C247D152300B7A7B4 /* HomeViewContainerCell.swift */,
 			);
 			path = HomeScene;
 			sourceTree = "<group>";
@@ -308,16 +332,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				F443016B2471B89900DC8195 /* SignInModels.swift in Sources */,
+				F4483007247D0C9800B7A7B4 /* HomeModels.swift in Sources */,
 				F443016A2471B89900DC8195 /* SignInRouter.swift in Sources */,
 				F44301712471BEAB00DC8195 /* SignInView.swift in Sources */,
+				F4483004247D0C9800B7A7B4 /* HomePresenter.swift in Sources */,
 				F4482FF9247C134100B7A7B4 /* HomeView.swift in Sources */,
 				F44301692471B89900DC8195 /* SignInWorker.swift in Sources */,
 				F44301682471B89900DC8195 /* SignInPresenter.swift in Sources */,
 				F443016C2471B89900DC8195 /* SignInViewController.swift in Sources */,
 				F4482FFB247C5AB900B7A7B4 /* HomeViewUserWelcome.swift in Sources */,
+				F4483006247D0C9800B7A7B4 /* HomeRouter.swift in Sources */,
+				F448300D247D152300B7A7B4 /* HomeViewContainerCell.swift in Sources */,
+				F4483008247D0C9800B7A7B4 /* HomeViewController.swift in Sources */,
+				F4483005247D0C9800B7A7B4 /* HomeWorker.swift in Sources */,
 				F4D6E0B224671C5B003B7F16 /* AppDelegate.swift in Sources */,
 				F4D6E0B424671C5B003B7F16 /* SceneDelegate.swift in Sources */,
 				F443016D2471B89900DC8195 /* SignInInteractor.swift in Sources */,
+				F448300B247D12B900B7A7B4 /* HomeViewCell.swift in Sources */,
+				F4483009247D0C9800B7A7B4 /* HomeInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
