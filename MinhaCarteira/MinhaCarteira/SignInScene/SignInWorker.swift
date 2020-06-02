@@ -12,9 +12,7 @@
 
 import UIKit
 
-class SignInWorker
-{
-  func doSomeWork()
-  {
+class SignInWorker {
+  func doSomeWork() {
   }
 }

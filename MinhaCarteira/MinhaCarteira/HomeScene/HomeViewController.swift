@@ -40,14 +40,16 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         router.dataStore = interactor
     }
 
-    //MARK: Table View
+    // MARK: - Table View
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
+        //
+        return 3
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        //
+        return UITableViewCell()
     }
 
     // MARK: Routing
@@ -63,8 +65,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
 
     // MARK: View lifecycle
 
-    override func viewDidLoad()
-    {
+    override func viewDidLoad() {
         super.viewDidLoad()
         doSomething()
 
@@ -78,14 +79,12 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
 
     //@IBOutlet weak var nameTextField: UITextField!
 
-    func doSomething()
-    {
+    func doSomething() {
         let request = Home.Something.Request()
         interactor?.doSomething(request: request)
     }
 
-    func displaySomething(viewModel: Home.Something.ViewModel)
-    {
+    func displaySomething(viewModel: Home.Something.ViewModel) {
         //nameTextField.text = viewModel.name
     }
 }

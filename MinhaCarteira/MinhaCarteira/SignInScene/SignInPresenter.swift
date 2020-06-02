@@ -12,19 +12,14 @@
 
 import UIKit
 
-protocol SignInPresentationLogic
-{
+protocol SignInPresentationLogic {
   func presentSomething(response: SignIn.Something.Response)
 }
 
-class SignInPresenter: SignInPresentationLogic
-{
+class SignInPresenter: SignInPresentationLogic {
   weak var viewController: SignInDisplayLogic?
-  
   // MARK: Do something
-  
-  func presentSomething(response: SignIn.Something.Response)
-  {
+  func presentSomething(response: SignIn.Something.Response) {
     let viewModel = SignIn.Something.ViewModel()
     viewController?.displaySomething(viewModel: viewModel)
   }

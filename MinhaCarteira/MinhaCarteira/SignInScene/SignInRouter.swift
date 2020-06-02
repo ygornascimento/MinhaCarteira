@@ -12,23 +12,20 @@
 
 import UIKit
 
-@objc protocol SignInRoutingLogic
-{
+@objc protocol SignInRoutingLogic {
   //func routeToSomewhere(segue: UIStoryboardSegue?)
 }
 
-protocol SignInDataPassing
-{
+protocol SignInDataPassing {
   var dataStore: SignInDataStore? { get }
 }
 
-class SignInRouter: NSObject, SignInRoutingLogic, SignInDataPassing
-{
+class SignInRouter: NSObject, SignInRoutingLogic, SignInDataPassing {
   weak var viewController: SignInViewController?
   var dataStore: SignInDataStore?
-  
+
   // MARK: Routing
-  
+
   //func routeToSomewhere(segue: UIStoryboardSegue?)
   //{
   //  if let segue = segue {
@@ -45,14 +42,14 @@ class SignInRouter: NSObject, SignInRoutingLogic, SignInDataPassing
   //}
 
   // MARK: Navigation
-  
+
   //func navigateToSomewhere(source: SignInViewController, destination: SomewhereViewController)
   //{
   //  source.show(destination, sender: nil)
   //}
-  
+
   // MARK: Passing data
-  
+
   //func passDataToSomewhere(source: SignInDataStore, destination: inout SomewhereDataStore)
   //{
   //  destination.name = source.name
